@@ -2,12 +2,11 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>About Me</title>
+	<title>Contact</title>
 </head>
 <body>
 
 	<header>
-
 		<span class="name">Michael Eggers</span>
 
 		<span class="nav">
@@ -19,14 +18,26 @@
 	</header>
 
 	<div class="container">
-	<!-- Section 1: About Me -->
+
 		<section>
 
-			<h1>About Me</h1>
+			<h1>Contact</h1>
 			<hr>
-			<img src="assets/images/profile_img.jpg" height="150" width="150" align="left" id="portfolioPic" alt="Michael Eggers">
-			<p>Hi, my name is Michael Eggers. I'm a Full Stack Web Developer. I specialize in making awesomeness and I'm a quick study (which means I can learn even more awesomeness, as needed). Hire me--it's the lesser of two evils.</p>
+			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
 
+				<label for="name">Name</label><br>
+				<input type="text" name="name" id="name" class="input" value="John Doe"><br>
+			
+				<label for="email">Email</label><br>
+				<input type="text" name="email" id="email" class="input" value="example@gmail.com"><br>
+		
+				<label for="message">Message</label><br>
+				<textarea name="message" id="message" class="input"></textarea>
+
+				<input type="submit" value="Submit">
+
+			</form>
+		
 		</section>
 
 		<aside>
