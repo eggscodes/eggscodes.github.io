@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width">
+
 	<title>About Me</title>
+
+	<!-- Link to Font Awesome icons -->
+	<script src="https://use.fontawesome.com/83f5b967bd.js"></script>
+
+	<!-- Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Local stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
 </head>
 <body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" id="myname">
+					<h1>Michael D. Eggers</h1>
+				</div>
+				<div class="text-center col-md-6">
+					<a href="index.html" class="btn btn-default navbar-btn">About</a>
+					|<a href="portfolio.html" class="btn btn-default navbar-btn">Portfolio</a>|
+					<a href="contact.html" class="btn btn-default navbar-btn">Contact</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-	<!-- Header containing name and nav section/buttons -->
-	<header>
 
-		<span class="name">Michael D. Eggers</span>
 
-		<!-- Grouped Navigation Links together for easier manipulation -->
-		<nav>
-			<a href="index.html"><span class="buttons">About</span></a>
-			|<a href="portfolio.html"><span class="buttons">Portfolio</span></a>|
-			<a href="contact.html"><span class="buttons">Contact</span></a>
-		</nav>
-		
-	</header>
+	<div class="container" id="content">
+		<div class="row">
 
-	<div class="container">
+			<!-- Main Content -->
+			<div class="col-md-8">
+				<div class="well" id="main-content">
+					<div class="row">
+						<!-- Header -->
+						<div class="col-md-12">
+							<header class="page-header">
+								<h2 class="header-title">About Me</h2>
+							</header>
+							
+						</div>
+					</div>
+					<div class="row">
+						<!-- Content - About Me Section -->
+						<div class="col-md-12">
+							<img src="assets/images/profile_img.jpg" class="img-responsive pull-left" id="profile-pic" alt="Michael Eggers">
+							<!-- start slipsum code -->
 
-		<!-- Section 1: About Me -->
-		<section id="about">
+							<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
 
-			<h1>About Me</h1>
-			<hr>
-			<img src="assets/images/profile_img.jpg" height="150" width="150" align="left" id="portfolioPic" alt="Michael Eggers">
-			<p>Hi, my name is Michael Eggers. I'm a Full Stack Web Developer. I specialize in making awesomeness and I'm a quick study (which means I can learn even more awesomeness, as needed). Hire me--it's the lesser of two evils.</p>
+							<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
 
-		</section>
-
-		<!-- Sidebar with Social Network connections -->
-		<aside>
-
-			<div id="connect">
-
-				<h3>Connect With Me</h3>
-				<hr>
-				<a href="https://github.com/mdeggers84" target="_blank"><img src="assets/images/github.png" class="icon rotate" alt="GitHub"></a>
-				<a href="https://www.linkedin.com/in/michael-eggers-ab827730/" target="_blank"><img src="assets/images/linkedin.png" class="icon rotate" alt="LinkedIn"></a>
-				<a href="http://stackoverflow.com/users/7050003/michael-eggers?tab=profile" target="_blank"><img src="assets/images/stackoverflow.png" class="icon rotate" alt="Stack Overflow"></a>
-
+							<!-- end slipsum code -->
+						</div>
+					</div>
+				</div>
 			</div>
 
-		</aside>
+			<!-- Sidebar - social network connections -->
+			<div class="col-md-4">
+				<div class="well" id="sidebar">
+
+					<div class="row">
+						<div class="text-center col-md-12">
+							<header class="page-header">
+								<h3 class="header-default">Connect With Me</h3>
+							</header>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="text-center col-md-12 col-xs-12">
+							<a href="https://github.com/mdeggers84" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/michael-eggers-ab827730/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+							<a href="http://stackoverflow.com/users/7050003/michael-eggers?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-4x" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 
 	</div>
 
-	<!-- Copyright information -->
-	<footer class="clear">
-		© Copyright 2017 Michael D. Eggers
+	<!-- Sticky Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; Copyright 2017 Michael Eggers</p>
+		</div>
 	</footer>
 
 </body>

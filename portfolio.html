@@ -1,86 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width">
+
 	<title>Portfolio</title>
+
+	<!-- Link to Font Awesome icons -->
+	<script src="https://use.fontawesome.com/83f5b967bd.js"></script>
+
+	<!-- Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Local stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
 </head>
 <body>
 
-	<!-- Header containing name and nav section/buttons -->
-	<header>
-
-		<span class="name">Michael D. Eggers</span>
-
-		<!-- Grouped Navigation Links together for easier manipulation -->
-		<nav>
-			<a href="index.html"><span class="buttons">About</span></a>
-			|<a href="portfolio.html"><span class="buttons">Portfolio</span></a>|
-			<a href="contact.html"><span class="buttons">Contact</span></a>
-		</nav>
-		
-	</header>
-
-	<div class="container">
-
-		<!-- Main Content - Portfolio Images/Links -->
-		<section>
-
-			<h1>Portfolio</h1>
-			<hr>
-			<div class="image left">
-				<img src="assets/images/ph1.jpeg" class="thumbnail" alt="placeholder" />
-				<a href="#nogo"><span class="banner">Hangman</span></a>
+	<!-- Page Navbar -->
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" id="myname">
+					<h1>Michael D. Eggers</h1>
+				</div>
+				<div class="col-md-6 text-center">
+					<a href="index.html" class="btn btn-default navbar-btn btn-lg">About</a>
+					|<a href="portfolio.html" class="btn btn-default navbar-btn btn-lg">Portfolio</a>|
+					<a href="contact.html" class="btn btn-default navbar-btn btn-lg">Contact</a>
+				</div>
 			</div>
-			<div class="image right">
-				<img src="assets/images/ph2.jpeg" class="thumbnail" alt="placeholder" />
-				<a href="#nogo"><span class="banner">RPG Game</span></a>
-			</div>
-			<div class="image left">
-				<img src="assets/images/ph3.jpeg" class="thumbnail" alt="placeholder" />
-				<a href="#nogo"><span class="banner">Trivia Game</span></a>
-			</div>
-			<div class="image right">
-				<img src="assets/images/ph4.jpeg" class="thumbnail" alt="placeholder" />
-				<a href="#nogo"><span class="banner">Rutgers Info Widget</span></a>
-			</div>
-			<div class="image left">
-				<img src="assets/images/ph5.jpeg" class="thumbnail" alt="placeholder" />
-				<a href="#nogo"><span class="banner">Rock Paper Scissors</span></a>
-			</div>
-			<div class="image right">
-				<img src="assets/images/ph6.jpeg" class="thumbnail" alt="placeholder" />
-				<a href="#nogo">
-					<span class="banner" id="slothbtn">Surprise!
-						<!-- I couldn't help myself :) -->
-						<div id="sloth"><img src="assets/images/sloth.gif" class="gif" alt="sloth"></div>
-					</span>
-				</a>
-			</div>
+		</div>
+	</nav>
 
-		</section>
 
-		<!-- Sidebar with Social Network connections -->
-		<aside>
+	<!-- Overall Content Container -->
+	<div class="container" id="content">
 
-			<div id="connect">
+		<div class="row">
 
-				<h3>Connect With Me</h3>
-				<hr>
-				<a href="https://github.com/mdeggers84" target="_blank"><img src="assets/images/github.png" class="icon rotate" alt="GitHub"></a>
-				<a href="https://www.linkedin.com/in/michael-eggers-ab827730/" target="_blank"><img src="assets/images/linkedin.png" class="icon rotate" alt="LinkedIn"></a>
-				<a href="http://stackoverflow.com/users/7050003/michael-eggers?tab=profile" target="_blank"><img src="assets/images/stackoverflow.png" class="icon rotate" alt="Stack Overflow"></a>
+			<!-- Main Content -->
+			<section class="col-md-8">
+				<div class="well" id="main-content">
+					<div class="row">
 
-			</div>
+						<!-- Maint Content Header -->
+						<div class="col-md-12">
+							<header class="page-header">
+								<h2 class="header-title">Portfolio</h2>
+							</header>
+						
 
-		</aside>
-		
-		
+							<!-- First Row of Thumbnails -->
+							<div class="row">
+								<div class="col-md-6 col-xs-12">
+									<div class="image">
+										<img src="assets/images/ph1.jpeg" class="thumbnail" alt="placeholder" />
+										<a href="#nogo"><span class="banner">Hangman</span></a>
+									</div>
+								</div>
 
+								<div class="col-md-6 col-xs-12">
+									<div class="image">
+										<img src="assets/images/ph2.jpeg" class="thumbnail" alt="placeholder" />
+										<a href="#nogo"><span class="banner">RPG Game</span></a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Second Row of Thumbnails -->
+							<div class="row">
+								<div class="col-md-6 col-xs-12">
+									<div class="image">
+										<img src="assets/images/ph3.jpeg" class="thumbnail" alt="placeholder" />
+										<a href="#nogo"><span class="banner">Trivia Game</span></a>
+									</div>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="image">
+										<img src="assets/images/ph4.jpeg" class="thumbnail" alt="placeholder" />
+										<a href="#nogo"><span class="banner">Rutgers Info Widget</span></a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Third Row of Thumbnails -->
+							<div class="row">
+								<div class="col-md-6 col-xs-12">
+									<div class="image">
+										<img src="assets/images/ph5.jpeg" class="thumbnail" alt="placeholder" />
+										<a href="#nogo"><span class="banner">Rock Paper Scissors</span></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Sidebar - social network connections -->
+			<aside class="col-md-4 text-center">
+				<div class="well" id="sidebar">
+
+					<!-- Sidebar Header -->
+					<div class="row">
+						<div class="col-md-12">
+							<header class="page-header">
+								<h3 class="header-default">Connect With Me</h3>
+							</header>
+						</div>
+					</div>
+
+					<!-- Connect Buttons -->
+					<div class="row">
+						<div class="col-md-12">
+							<a href="https://github.com/mdeggers84" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/michael-eggers-ab827730/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+							<a href="http://stackoverflow.com/users/7050003/michael-eggers?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-4x" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+		</div>
 	</div>
 
-	<footer class="clear">
-		© Copyright 2017 Michael Eggers
-	</footer>
+	<!-- Sticky Footer -->
+	<footer class="footer">
+      <div class="container">
+        <p>&copy; Copyright 2017 Michael Eggers</p>
+      </div>
+    </footer>
 
 </body>
 </html>
